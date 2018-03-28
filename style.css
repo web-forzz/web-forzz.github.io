@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+    position: bottom;
+    
+}
+nav {
+    margin-left: -8px;
+    
+    background: #22252d;
+    padding: 15px 10px;   
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: right;
+}
+span{
+    text-align: left;
+}
+
+nav > ul {
+   padding: 0;
+}
+nav li{
+    display: inline-block;
+    vertical-align: top;
+}
+nav a{
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+nav a:hover{
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+nav label {    
+    display: none;
+    border: 1px solid #fff;   
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+nav label:hover{
+    color: #f98500;
+    border: 1px solid #f98500;
+}
+
+
+@media screen and (max-width: 590px) {
+
+    nav label{
+     display: inline-block;
+ }
+ nav > ul {
+    display: none;
+}
+input[type="checkbox"]:checked ~ label + ul {
+    display: block;
+}
+
+}
+.img_header img{
+    width: 100%;
+    height: 600px;
+    box-shadow: 0px 8px 5px #888888;
+}
+.img_header p{
+    position    : absolute;
+    top     : 80px;
+    left        : 35%;
+    width       : 50%;
+    color: white;
+    font-size: 80px;
+
+}
+.content{
+    margin-left:10%;
+    margin-right:5%;
+    padding-top: 50px;
+}
+.left span{
+    font-size: 120%;
+}
+.left img td{
+    float: left;
+}
+.left img{
+    width: 50%;
+    transition: 0.3s;
+
+    
+}
+.left img:hover{
+    width: 50%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.left{
+    max-width: 
+}
+.right {
+    float: right;
+
+}
+.right a{
+    text-decoration: none;
+}
+.style14{ 
+  border: 0; 
+  height: 1px;
+  width: 250px; 
+  background-image: -webkit-linear-gradient(left, #8c8b8b, #8c8b8b, #8c8b8b);
+  background-image: -moz-linear-gradient(left, #8c8b8b, #8c8b8b, #8c8b8b);
+  background-image: -ms-linear-gradient(left, #8c8b8b, #8c8b8b, #8c8b8b);
+  background-image: -o-linear-gradient(left, #8c8b8b, #8c8b8b, #8c8b8b); 
+
+}
+.right input{
+    width: 250px;
+    height: 37px;
+    border: 2px solid black;
+    background: #a9a9a9;
+    color: white;
+    font-size: 19px;
+    padding-left: 6px;
+}
+.right button{
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background: #22252d;
+    margin-top: 10px;
+    width: 250px;
+    height: 37px;
+}
+.left div img{
+    box-shadow: 5px 5px 5px #888888;
+}
+.left p{
+
+    max-width: 600px;
+}
+.left_read{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+.left_read:hover{
+    margin-left: 10px;
+    transition: 1s;
+}
+.tags a{
+    color: #a9a9a9;
+    font-size: 14px;
+}
+.tags a:hover{
+   font-size: 17px;
+   transition: 0.2s;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   color: black;
+}
+.right_img span{
+    font-size: 14px;
+    float: right;
+}
+.right_img span i{
+    font-size: 13px;
+}
+.pagination {
+    display: inline-block;
+}
+
+.scrool a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.scrool a.active {
+    background-color: #A9A9A9;
+    color: white;
+    border: 1px solid black;
+}
+
+.scrool a:hover:not(.active) 
+{background-color: #ddd;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background: black;
+    color: white;
+}
+.footer p{
+    font-family: Verdana;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer input{
+    width: 250px;
+    height: 37px;
+    border: 2px solid #a9a9a9;
+    background: white;
+    color: black;
+    font-size: 19px;
+    padding-left: 6px;
+    
+
+}
+.footer button{
+    font-size: 16px;
+    border: 0;
+    color: white;
+    background: #22252d;
+    margin-top: 10px;
+    width: 250px;
+    height: 37px;
+    
+    border: 1px solid white;
+}
+#hellopreloader>p{
+    display:none;
+}
+#hellopreloader_preload{
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #34495E url(http://hello-site.ru//main/images/preloads/bars.svg) center center no-repeat;
+    background-size:160px;
+}
+.logo{
+    font-size: 25px;
+    padding: 6px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid white;
+    margin-top: -14px;
+    display: inline-block;
+    float:left;
+}
